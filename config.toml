@@ -1,0 +1,57 @@
+# Your full site URL. Example:
+# "https://<username>.neocities.org/"
+baseURL = "http://kidc.xyz"
+languageCode = "en-us"
+# Title of your site
+title = "KidC"
+# How many feed entries to load at once
+paginate = 5
+theme = "neofeed-theme"
+buildFuture = true
+
+
+[taxonomies]
+tag = "tags"
+
+[author]
+name = "KidC" # Your online name
+# Your profile image. External link or relative to static/. Examples:
+# "https://imgur.com/123456788"
+# "image/me.webp"
+image = "https://s3-img.meituan.net/v1/mss_3d027b52ec5a4d589e68050845611e68/ff/n0/0d/ka/dn_495876.jpg@596w_1l.jpg"
+about = "Living is easy with eyes closed..."
+
+[params]
+# Name of a file in static/skins/ without the ".css" extension
+skin = "macintosh"
+
+#
+# Totally optional cool stuff (see README for details)
+#
+# socialImage = "static/img/social.png" # site image for rich embeds
+# customCSS = "css/style.css" # relative to ./static/
+# plausible = true
+# paymentPointer = "$wallet.provider.com/myspecialid123"
+# webmentionUrl = "https://webmention.io/example/webmention"
+# pingbackUrl = "https://webmention.io/example/xmlrpc"
+# micropubUrl = "https://example.com/.netlify/functions/micropub"
+# microsubUrl = "https://aperture.p3k.io/microsub/example"
+
+#
+# For IndieAuth and the author card
+#
+fanfouer = "KidC"
+# twitteruser = "chihiro" # no @ in front
+mastodon = "https://alive.bar/web/accounts/13520" # full link to your instance profile
+
+[permalinks]
+# Format for feed entry links. You probably don't need to change this.
+ post = "/:year/:month/:title/"
+ page = "/:slug/" 
+
+
+
+
+[outputs]
+# Output formats for your feed. You probably don't need to change this.
+  home = ["HTML", "JSON", "RSS"]
